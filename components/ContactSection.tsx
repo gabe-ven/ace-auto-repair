@@ -50,7 +50,7 @@ export default function ContactSection() {
                     {h.day}
                     {i === todayIdx && <span style={{ background: '#DC2626', color: '#ffffff', fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '2px 8px', borderRadius: 2 }}>Today</span>}
                   </span>
-                  <span style={{ color: h.closed ? '#BBBBBB' : (i === todayIdx ? '#111111' : '#555555') }}>{h.open}</span>
+                  <span style={{ color: i === todayIdx ? '#111111' : '#555555' }}>{h.open}</span>
                 </div>
               ))}
               <p style={{ margin: '14px 0 0 0', fontFamily: "'Playfair Display',serif", fontStyle: 'italic', fontSize: 13, color: '#777777' }}>Walk-ins welcome during business hours.</p>
